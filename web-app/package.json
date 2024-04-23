@@ -18,6 +18,7 @@
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/eslint": "^8.56.0",
+		"@types/isotope-layout": "^3.0.13",
 		"autoprefixer": "^10.4.19",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
@@ -35,9 +36,9 @@
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^6.5.2",
 		"@tsparticles/preset-stars": "^3.0.2",
+		"@tsparticles/slim": "^3.3.0",
 		"@tsparticles/svelte": "^3.0.0",
 		"isotope-layout": "^3.0.6",
-		"swiper": "^11.1.1",
-		"tsparticles": "^3.3.0"
+		"swiper": "^11.1.1"
 	}
 }
