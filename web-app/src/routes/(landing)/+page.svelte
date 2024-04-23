@@ -147,7 +147,7 @@
 />
 
 <Hero />
-<main class="z-[1]">
+<main class="z-[1]" id="main">
 	<Header />
 	<About />
 	<ShowCase />
