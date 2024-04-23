@@ -55,8 +55,8 @@
 <Section name="show-case">
 	<Container>
 		<SectionTitle>
-			<SectionHeader>Show case</SectionHeader>
-			<p>
+			<SectionHeader class="text-white/80">Show case</SectionHeader>
+			<p class="text-white/60">
 				Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
 				Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
 				alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
@@ -66,7 +66,7 @@
 		<Row data-aos="fade-up">
 			<div class="max-w-full w-full px-3 flex justify-center">
 				<ul
-					class="flex jstify-center mx-auto mt-0 mb-[35px] py-[8px] px-[20px] shadow-sm text-center rounded-[50px] bg-slate-200"
+					class="flex jstify-center mx-auto mt-0 mb-[35px] py-[8px] px-[20px] shadow-sm text-center rounded-[50px] bg-[#5d5d5d]"
 					id="show-case-filter"
 				>
 					{#each showCaseFilters as showCaseFilter, idx}
@@ -87,24 +87,24 @@
 		<Row class="mb-[30px] relative" id="show-case-container" data-aos="fade-up">
 			{#each projects as project}
 				<div class="lg:w-1/3 md:w-1/2 px-3 mb-3 show-case-item {prefixFilter}-{project.type}">
-					<ShowCaseWrap class="group">
+					<ShowCaseWrap class="group brightness-95 hover:brightness-105">
 						<img class="max-w-full h-auto" src="/images/{project.imageUrl}" alt={project.name} />
 						<ShowCaseInfo
 							class="group-hover:opacity-100 group-hover:before:top-[15px] group-hover:before:left-[15px] group-hover:after:bottom-[15px] group-hover:after:right-[15px]"
 						>
-							<h4 class="text-[20px] text-white font-semibold">{project.name}</h4>
-							<p class="text-white text-[14px] uppercase">{project.type}</p>
+							<h4 class="text-[20px] font-semibold text-white/80">{project.name}</h4>
+							<p class="text-[14px] uppercase text-white/60">{project.type}</p>
 							<div class="text-center z-[4]">
 								<a
 									href="/images/{project.imageUrl}"
 									data-gallery="portfolioGallery"
-									class="text-white mx-[2px] text-[28px] inline-block duration-300 hover:text-[#4ae3c6]"
+									class="text-white/70 mx-[2px] text-[28px] inline-block duration-300 hover:text-[#03dac5]"
 									title={project.name}
 								>
 									<i class="fa-solid fa-plus"></i>
 								</a>
 								<a
-									class="text-white mx-[2px] text-[28px] inline-block duration-300 hover:text-[#4ae3c6]"
+									class="text-white/70 mx-[2px] text-[28px] inline-block duration-300 hover:text-[#bb86fc]"
 									href={'#'}
 									title="Demo"
 								>

@@ -152,4 +152,6 @@
 	<About />
 	<ShowCase />
 </main>
-<BackToTop />
+<BackToTop duration={1500}>
+	<i class="fa-solid fa-arrow-up"></i>
+</BackToTop>

@@ -52,7 +52,7 @@
 <a
 	href={'javascript:;'}
 	on:click={() => backToTop(delay, duration, easing)}
-	class="fixed bottom-[15px] right-[15px] z-[996] size-[40px] text-white/80 bg-primary-default hover:bg-primary-hover rounded-[50px] animate-bounce flex items-center justify-center text-[16px] leading-0"
+	class="fixed bottom-[15px] right-[15px] z-[996] size-[40px] text-white/95 bg-[#bb86fc] hover:bg-primary-hover rounded-[50px] animate-bounce flex items-center justify-center text-[16px] leading-0"
 	class:invisible={scrollY <= showThreshold}
 	transition:fade={{ duration: 1000 }}
 >

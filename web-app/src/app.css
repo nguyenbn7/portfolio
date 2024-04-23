@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 html {
-	@apply bg-[#212121] text-white/50;
+	@apply bg-[#121212] text-white/50;
 }
 
 @layer components {
     .filter-active {
-		@apply text-[#1bab91];
+		@apply text-[#bb86fc];
 	}
 }
