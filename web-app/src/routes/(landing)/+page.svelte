@@ -1,6 +1,9 @@
 <script>
 	import BackToTop from '$lib/component/back-to-top.svelte';
+	import About from '$lib/home/about.svelte';
+	import Hero from '$lib/home/hero.svelte';
 	import ShowCase from '$lib/home/show-case.svelte';
+	import Header from '$lib/layout/header.svelte';
 	import { loadSlim } from '@tsparticles/slim';
 	import Particles, { particlesInit } from '@tsparticles/svelte';
 	import { onMount } from 'svelte';
@@ -132,7 +135,7 @@
 </script>
 
 <svelte:head>
-	<title>{data.appName} | Home</title>
+	<title>{data.appName}</title>
 </svelte:head>
 
 <svelte:component
@@ -143,13 +146,10 @@
 	on:particlesLoaded={onParticlesLoaded}
 />
 
-<h1 class="text-[64px] font-bold w-full text-center">Web tools</h1>
-
-<ShowCase />
+<Hero />
+<main class="z-[1]">
+	<Header />
+	<About />
+	<ShowCase />
+</main>
 <BackToTop />
-
-<style lang="postcss">
-	/* :global(html) {
-		@apply bg-[#212121];
-	} */
-</style>
