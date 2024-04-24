@@ -17,6 +17,7 @@
 		"@sveltejs/adapter-node": "^5.0.1",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@types/aos": "^3.0.7",
 		"@types/eslint": "^8.56.0",
 		"@types/isotope-layout": "^3.0.13",
 		"autoprefixer": "^10.4.19",
@@ -38,6 +39,7 @@
 		"@tsparticles/preset-stars": "^3.0.2",
 		"@tsparticles/slim": "^3.3.0",
 		"@tsparticles/svelte": "^3.0.0",
+		"aos": "^2.3.4",
 		"isotope-layout": "^3.0.6",
 		"swiper": "^11.1.1"
 	}

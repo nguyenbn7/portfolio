@@ -6,7 +6,7 @@
 	id="hero"
 	class="relative flex flex-col justify-center items-center w-full h-screen bg-cover bg-center before:content-normal before:bg-black/40 before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 lg:bg-fixed z-[1]"
 >
-	<Container class="text-center z-[2]">
+	<Container class="text-center z-[2]" data-aos="fade-up">
 		<h1
 			class="text-white/85 mb-[10px] text-[48px] font-bold leading-[56px] max-md:text-[28px] max-md:leading-[36px]"
 		>

@@ -1,4 +1,5 @@
 <script>
+	import 'aos/dist/aos.css';
 	import BackToTop from '$lib/component/back-to-top.svelte';
 	import About from '$lib/home/about.svelte';
 	import Hero from '$lib/home/hero.svelte';
@@ -7,6 +8,7 @@
 	import { loadSlim } from '@tsparticles/slim';
 	import Particles, { particlesInit } from '@tsparticles/svelte';
 	import { onMount } from 'svelte';
+	import Aos from 'aos';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -130,6 +132,14 @@
 	onMount(async () => {
 		const module = await import('@tsparticles/svelte');
 
+		Aos.init({
+			disable: 'phone',
+			duration: 1000,
+			easing: 'ease-in-out',
+			once: true,
+			mirror: false
+		});
+
 		ParticlesComponent = module.default;
 	});
 </script>
@@ -147,11 +157,13 @@
 />
 
 <Hero />
+
 <main class="z-[1]" id="main">
 	<Header />
 	<About />
 	<ShowCase />
 </main>
+
 <BackToTop duration={1500}>
 	<i class="fa-solid fa-arrow-up"></i>
 </BackToTop>

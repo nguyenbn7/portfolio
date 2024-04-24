@@ -8,6 +8,7 @@
 
 <h2
 	class={'block text-[36px] font-medium mb-[20px] leading-5' + (classNames ? ` ${classNames}` : '')}
+	{...$$restProps}
 >
 	<slot></slot>
 </h2>

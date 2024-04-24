@@ -10,4 +10,12 @@ html {
     .filter-active {
 		@apply text-[#bb86fc];
 	}
+
+	.nav-active {
+		@apply text-white/80 before:w-full;
+	}
+
+	.navbar-mobile {
+		@apply absolute !block top-[55px] left-[15px] right-[15px] py-[10px] bg-[#4F4F4F] overflow-y-auto duration-300 min-h-[15vh];
+	}
 }

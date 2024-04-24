@@ -52,9 +52,9 @@
 	});
 </script>
 
-<Section name="show-case">
+<Section name="project">
 	<Container>
-		<SectionTitle>
+		<SectionTitle data-aos="fade-up">
 			<SectionHeader class="text-white/80">Show case</SectionHeader>
 			<p class="text-white/60">
 				Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
