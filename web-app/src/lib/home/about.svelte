@@ -1,6 +1,6 @@
 <script>
 	import NguyenPronounciation from '$lib/assets/audio/Nguyen-Pronounciation.mp3';
-	import AboutImg from '$lib/assets/images/about-img.jpg';
+	import AboutImg from '$lib/assets/images/about-img.webp';
 	import Container from '$lib/component/container.svelte';
 	import Row from '$lib/component/row.svelte';
 	import Section from '$lib/component/section.svelte';
