@@ -16,7 +16,7 @@
 	let currentSectionId;
 
 	/**
-	 * @type {HTMLDivElement}
+	 * @type {HTMLElement}
 	 */
 	let navBarEle;
 
