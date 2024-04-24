@@ -4,47 +4,47 @@
 export const projects = [
     {
         name: 'App 1',
-        imageUrl: 'portfolio-1.jpg',
+        imageUrl: '/images/portfolio-1.jpg',
         type: 'app',
     },
     {
         name: 'Web 3',
-        imageUrl: 'portfolio-2.jpg',
+        imageUrl: '/images/portfolio-2.jpg',
         type: 'web',
     },
     {
         name: 'App 2',
-        imageUrl: 'portfolio-3.jpg',
+        imageUrl: '/images/portfolio-3.jpg',
         type: 'app',
     },
     {
         name: 'Card 2',
-        imageUrl: 'portfolio-4.jpg',
+        imageUrl: '/images/portfolio-4.jpg',
         type: 'card',
     },
     {
         name: 'Web 2',
-        imageUrl: 'portfolio-5.jpg',
+        imageUrl: '/images/portfolio-5.jpg',
         type: 'web',
     },
     {
         name: 'App 3',
-        imageUrl: 'portfolio-6.jpg',
+        imageUrl: '/images/portfolio-6.jpg',
         type: 'app',
     },
     {
         name: 'Card 1',
-        imageUrl: 'portfolio-7.jpg',
+        imageUrl: '/images/portfolio-7.jpg',
         type: 'card',
     },
     {
         name: 'Card 3',
-        imageUrl: 'portfolio-8.jpg',
+        imageUrl: '/images/portfolio-8.jpg',
         type: 'card',
     },
     {
         name: 'Web 3',
-        imageUrl: 'portfolio-9.jpg',
+        imageUrl: '/images/portfolio-9.jpg',
         type: 'web',
     }
 ];

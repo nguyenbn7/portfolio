@@ -24,30 +24,43 @@
 				<h3 class="font-normal text-[34px] text-white/80" data-aos="fade-up">About Me</h3>
 				<p class="text-white/70" data-aos="fade-up">
 					Hi there! My name is <a
-						class="text-white/80 font-bold"
+						class="text-white/80 font-bold mr-1"
 						href="https://en.wikipedia.org/wiki/Nguyen#Pronunciation">Nguyên</a
 					>
-					<a href={NguyenPronounciation} class="text-[#03dac5]" on:click|preventDefault={playAudio}
-						><i class="fa-solid fa-volume-high"></i></a
-					>
+					<a
+						href={NguyenPronounciation}
+						class="text-[#bb86fc] font-bold mr-1"
+						on:click|preventDefault={playAudio}
+						title="Hear pronunciation"><i class="fa-solid fa-volume-high"></i></a
+					>. I have been a self-taught developer since 2018 when I was in University and I have 2
+					years experience in software developer and testing. From 2023, I become a lifelong learner
+					in programming and find fun through developing small or silly projects.
 				</p>
-				<div class="mt-[44px]" data-aos="fade-up">
+
+				<div class="mt-[44px]" data-aos="fade-up" data-aos-delay="1">
 					<span class="text-[48px] float-left text-[#bb86fc]">
-						<i class="fa-solid fa-receipt"></i>
+						<i class="fa-solid fa-cube"></i>
 					</span>
-					<h4 class="text-[22px] font-medium ml-[60px] text-white/80">Corporis voluptates sit</h4>
+					<h4 class="text-[22px] font-medium ml-[60px] text-white/80">
+						What are my values and principles?
+					</h4>
 					<p class="text-[15px] ml-[60px] text-white/70">
-						Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+						Care about the product, Domain driven, Develop an application through iteration rather
+						making it in a step.
 					</p>
 				</div>
 
 				<div class="mt-[44px]" data-aos="fade-up" data-aos-delay="100">
 					<span class="text-[48px] float-left text-[#bb86fc]">
-						<i class="fa-solid fa-cube"></i>
+						<i class="fa-solid fa-receipt"></i>
 					</span>
-					<h4 class="text-[22px] font-medium ml-[60px] text-white/80">Ullamco laboris nisi</h4>
+					<h4 class="text-[22px] font-medium ml-[60px] text-white/80">
+						Which programming languages I choose?
+					</h4>
 					<p class="text-[15px] ml-[60px] text-white/70">
-						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+						I like to use <span class="font-bold text-white/75 hover:text-[#bb86fc]">Python</span>,
+						<span class="font-bold text-white/75 hover:text-[#bb86fc]">JavaScript</span> to make my development
+						faster.
 					</p>
 				</div>
 
@@ -55,9 +68,29 @@
 					<span class="text-[48px] float-left text-[#bb86fc]">
 						<i class="fa-solid fa-bolt"></i>
 					</span>
-					<h4 class="text-[22px] font-medium ml-[60px] text-white/80">Ullamco laboris nisi</h4>
+					<h4 class="text-[22px] font-medium ml-[60px] text-white/80">
+						Which framework I currenly use?
+					</h4>
 					<p class="text-[15px] ml-[60px] text-white/70">
-						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+						<a href="https://kit.svelte.dev/" class="text-white/75 font-bold hover:text-[#bb86fc]"
+							>SvelteKit</a
+						>,
+						<a href="https://tailwindcss.com/" class="text-white/75 font-bold hover:text-[#bb86fc]"
+							>Tailwindcss</a
+						>,
+						<a
+							href="https://www.djangoproject.com/"
+							class="text-white/75 font-bold hover:text-[#bb86fc]">Django</a
+						>
+						(sometimes
+						<a
+							href="https://fastapi.tiangolo.com/"
+							class="text-white/75 font-bold hover:text-[#bb86fc]">FastAPI</a
+						>) and
+						<a
+							href="https://www.tensorflow.org/"
+							class="text-white/75 font-bold hover:text-[#bb86fc]">TensorFlow</a
+						>
 					</p>
 				</div>
 			</div>

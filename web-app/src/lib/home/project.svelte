@@ -71,7 +71,7 @@
 			{#each projects as project}
 				<div class="lg:w-1/3 md:w-1/2 px-3 mb-3 show-case-item {prefixFilter}-{project.type}">
 					<ProjectWrap class="group brightness-95 hover:brightness-105">
-						<img class="max-w-full h-auto" src="/images/{project.imageUrl}" alt={project.name} />
+						<img class="max-w-full h-auto" src={project.imageUrl} alt={project.name} />
 						<ProjectInfo
 							class="group-hover:opacity-100 group-hover:before:top-[15px] group-hover:before:left-[15px] group-hover:after:bottom-[15px] group-hover:after:right-[15px]"
 						>
@@ -79,7 +79,7 @@
 							<p class="text-[14px] uppercase text-white/60">{project.type}</p>
 							<div class="text-center z-[4]">
 								<a
-									href="/images/{project.imageUrl}"
+									href={project.imageUrl}
 									data-gallery="portfolioGallery"
 									class="text-white/70 mx-[2px] text-[28px] inline-block duration-300 hover:text-[#03dac5]"
 									title={project.name}
@@ -88,7 +88,7 @@
 								</a>
 								<a
 									class="text-white/70 mx-[2px] text-[28px] inline-block duration-300 hover:text-[#bb86fc]"
-									href={'#'}
+									href={project.demoLink || '#'}
 									title="Demo"
 								>
 									<i class="fa-solid fa-link"></i>

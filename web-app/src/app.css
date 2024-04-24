@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 html {
+	font-family: 'Open Sans', sans-serif;
 	@apply bg-[#121212] text-white/50;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 @layer components {

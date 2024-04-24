@@ -27,7 +27,7 @@
 				value: 175
 			},
 			color: {
-				value: ['#fbb03b', '#ffffff']
+				value: ['#f6a823', '#ccc']
 			},
 			shape: {
 				type: 'circle'
@@ -47,8 +47,8 @@
 			},
 			size: {
 				value: {
-					min: 0.01,
-					max: 5
+					min: 0.001,
+					max: 4
 				},
 				animation: {
 					enable: true,
