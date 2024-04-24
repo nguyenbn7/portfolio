@@ -23,10 +23,12 @@
 			<div class="xl:w-1/2 lg:w-7/12 pt-12 lg:pt-0 px-3">
 				<h3 class="font-normal text-[34px] text-white/80" data-aos="fade-up">About Me</h3>
 				<p class="text-white/70" data-aos="fade-up">
-					Hi there! My name is Nguyên <a
-						href={NguyenPronounciation}
-						class="text-[#03dac5]"
-						on:click|preventDefault={playAudio}><i class="fa-solid fa-volume-high"></i></a
+					Hi there! My name is <a
+						class="text-white/80 font-bold"
+						href="https://en.wikipedia.org/wiki/Nguyen#Pronunciation">Nguyên</a
+					>
+					<a href={NguyenPronounciation} class="text-[#03dac5]" on:click|preventDefault={playAudio}
+						><i class="fa-solid fa-volume-high"></i></a
 					>
 				</p>
 				<div class="mt-[44px]" data-aos="fade-up">
