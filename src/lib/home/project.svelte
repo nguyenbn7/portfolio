@@ -36,6 +36,13 @@
 				itemSelector: '.show-case-item'
 			});
 		}
+
+		const GLightbox = (await import('glightbox')).default;
+
+		const glightbox = GLightbox({
+			selector: '.project-glightbox',
+			
+		});
 	});
 </script>
 
@@ -80,8 +87,8 @@
 							<div class="text-center z-[4]">
 								<a
 									href={project.imageUrl}
-									data-gallery="portfolioGallery"
-									class="text-white/70 mx-[2px] text-[28px] inline-block duration-300 hover:text-[#03dac5]"
+									data-gallery={project.name}
+									class="text-white/70 mx-[2px] text-[28px] inline-block duration-300 hover:text-[#03dac5] project-glightbox"
 									title={project.name}
 								>
 									<i class="fa-solid fa-plus"></i>
