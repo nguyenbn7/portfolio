@@ -1,26 +1,13 @@
 <script>
-	import { projects } from '$lib/app-data/home/project';
+	import { prefixFilter, projectFilters, projects } from '$lib/app-data/home/project-section';
 	import Container from '$lib/component/container.svelte';
 	import Row from '$lib/component/row.svelte';
 	import SectionHeader from '$lib/component/section-header.svelte';
 	import SectionTitle from '$lib/component/section-title.svelte';
 	import Section from '$lib/component/section.svelte';
 	import { onMount } from 'svelte';
-	import ShowCaseInfo from './show-case-info.svelte';
-	import ShowCaseWrap from './show-case-wrap.svelte';
-
-	const prefixFilter = 'show-case';
-
-	const showCaseFilters = [
-		{
-			name: 'all',
-			by: '*'
-		},
-		...[...new Set(projects.map((p) => p.type.toLowerCase()))].map((pTypeName) => ({
-			name: pTypeName,
-			by: `.${prefixFilter}-${pTypeName.toLowerCase()}`
-		}))
-	];
+	import ProjectInfo from './project-info.svelte';
+	import ProjectWrap from './project-wrap.svelte';
 
 	let filterId = 0;
 
@@ -30,14 +17,14 @@
 	let showCaseIsoTope;
 
 	/**
-	 * @param {ShowCaseFilter} showCaseFilter
+	 * @param {ProjectFilter} projectFilter
 	 */
-	function filter(showCaseFilter) {
+	function filter(projectFilter) {
 		showCaseIsoTope.arrange({
-			filter: showCaseFilter.by
+			filter: projectFilter.by
 		});
 
-		filterId = showCaseFilters.indexOf(showCaseFilter);
+		filterId = projectFilters.indexOf(projectFilter);
 	}
 
 	onMount(async () => {
@@ -55,12 +42,8 @@
 <Section name="project">
 	<Container>
 		<SectionTitle data-aos="fade-up">
-			<SectionHeader class="text-white/80">Show case</SectionHeader>
-			<p class="text-white/60">
-				Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
-				Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
-				alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-			</p>
+			<SectionHeader class="text-white/80">What I have made</SectionHeader>
+			<p class="text-white/60">From simple to complex projects</p>
 		</SectionTitle>
 
 		<Row data-aos="fade-up">
@@ -69,15 +52,15 @@
 					class="flex jstify-center mx-auto mt-0 mb-[35px] py-[8px] px-[20px] shadow-sm text-center rounded-[50px] bg-[#5d5d5d]"
 					id="show-case-filter"
 				>
-					{#each showCaseFilters as showCaseFilter, idx}
+					{#each projectFilters as projectFilter, idx}
 						<!-- svelte-ignore a11y-click-events-have-key-events -->
 						<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 						<li
 							class="cursor-pointer inline-block pt-[10px] pb-[8px] px-[15px] text-[14px] font-semibold leading-4 uppercase mb-[5px] transition-all ease-in-out duration-300"
-							on:click={(_) => filter(showCaseFilter)}
+							on:click={(_) => filter(projectFilter)}
 							class:filter-active={idx === filterId}
 						>
-							{showCaseFilter.name}
+							{projectFilter.name}
 						</li>
 					{/each}
 				</ul>
@@ -87,9 +70,9 @@
 		<Row class="mb-[30px] relative" id="show-case-container" data-aos="fade-up">
 			{#each projects as project}
 				<div class="lg:w-1/3 md:w-1/2 px-3 mb-3 show-case-item {prefixFilter}-{project.type}">
-					<ShowCaseWrap class="group brightness-95 hover:brightness-105">
+					<ProjectWrap class="group brightness-95 hover:brightness-105">
 						<img class="max-w-full h-auto" src="/images/{project.imageUrl}" alt={project.name} />
-						<ShowCaseInfo
+						<ProjectInfo
 							class="group-hover:opacity-100 group-hover:before:top-[15px] group-hover:before:left-[15px] group-hover:after:bottom-[15px] group-hover:after:right-[15px]"
 						>
 							<h4 class="text-[20px] font-semibold text-white/80">{project.name}</h4>
@@ -111,8 +94,8 @@
 									<i class="fa-solid fa-link"></i>
 								</a>
 							</div>
-						</ShowCaseInfo>
-					</ShowCaseWrap>
+						</ProjectInfo>
+					</ProjectWrap>
 				</div>
 			{/each}
 		</Row>

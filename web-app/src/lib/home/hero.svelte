@@ -1,5 +1,23 @@
 <script>
+	import { introduction, jobTitles } from '$lib/app-data/home/hero-section';
 	import Container from '$lib/component/container.svelte';
+	import { onMount } from 'svelte';
+	import Typed from 'typed.js';
+
+	/**
+	 * @type {HTMLSpanElement}
+	 */
+	let jobTitlesEl;
+
+	onMount(() => {
+		new Typed(jobTitlesEl, {
+			strings: jobTitles.split(','),
+			loop: true,
+			typeSpeed: 100,
+			backSpeed: 50,
+			backDelay: 2000
+		});
+	});
 </script>
 
 <section
@@ -10,12 +28,12 @@
 		<h1
 			class="text-white/85 mb-[10px] text-[48px] font-bold leading-[56px] max-md:text-[28px] max-md:leading-[36px]"
 		>
-			Welcome to my personal website
+			{introduction}
 		</h1>
 		<h2
 			class="text-white/60 font-semibold leading-tight mb-[35px] text-[24px] max-md:text-[18px] max-md:leading-[24px] max-md:mb-[30px]"
 		>
-			We are team of talented designers making websites with Bootstrap
+			I'm <span class="text-[#bb86fc] tracking-[1px]" bind:this={jobTitlesEl}></span>
 		</h2>
 		<a
 			href="#about"

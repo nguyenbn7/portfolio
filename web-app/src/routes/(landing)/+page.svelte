@@ -3,7 +3,7 @@
 	import BackToTop from '$lib/component/back-to-top.svelte';
 	import About from '$lib/home/about.svelte';
 	import Hero from '$lib/home/hero.svelte';
-	import ShowCase from '$lib/home/show-case.svelte';
+	import ShowCase from '$lib/home/project.svelte';
 	import Header from '$lib/layout/header.svelte';
 	import { loadSlim } from '@tsparticles/slim';
 	import Particles, { particlesInit } from '@tsparticles/svelte';

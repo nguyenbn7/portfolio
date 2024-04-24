@@ -1,8 +1,17 @@
 <script>
+	import NguyenPronounciation from '$lib/assets/audio/Nguyen-Pronounciation.mp3';
 	import AboutImg from '$lib/assets/images/about-img.jpg';
 	import Container from '$lib/component/container.svelte';
 	import Row from '$lib/component/row.svelte';
 	import Section from '$lib/component/section.svelte';
+
+	/**
+	 * @param {MouseEvent & { currentTarget: EventTarget & HTMLAnchorElement; }} $event
+	 */
+	function playAudio($event) {
+		const audio = new Audio($event.currentTarget.href);
+		audio.play();
+	}
 </script>
 
 <Section name="about">
@@ -12,12 +21,13 @@
 				<img src={AboutImg} class="max-w-full h-auto align-middle" alt="Profile" />
 			</div>
 			<div class="xl:w-1/2 lg:w-7/12 pt-12 lg:pt-0 px-3">
-				<h3 class="font-normal text-[34px] text-white/80" data-aos="fade-up">
-					Voluptatem dignissimos provident
-				</h3>
+				<h3 class="font-normal text-[34px] text-white/80" data-aos="fade-up">About Me</h3>
 				<p class="text-white/70" data-aos="fade-up">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua.
+					Hi there! My name is Nguyên <a
+						href={NguyenPronounciation}
+						class="text-[#03dac5]"
+						on:click|preventDefault={playAudio}><i class="fa-solid fa-volume-high"></i></a
+					>
 				</p>
 				<div class="mt-[44px]" data-aos="fade-up">
 					<span class="text-[48px] float-left text-[#bb86fc]">

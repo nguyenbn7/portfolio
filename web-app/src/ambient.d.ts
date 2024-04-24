@@ -2,10 +2,10 @@ type Project = {
     name: string;
     imageUrl: string;
     type: string;
-    demoLink: string | undefined;
+    demoLink?: string;
 };
 
-type ShowCaseFilter = {
+type ProjectFilter = {
     name: string;
     by: string;
 }
