@@ -1,5 +1,5 @@
 {
-	"name": "personal-website",
+	"name": "portfolio-website",
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
@@ -13,9 +13,7 @@
 		"tailwindcss": "tailwindcss"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-node": "^5.0.1",
-		"@sveltejs/adapter-vercel": "^5.3.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/aos": "^3.0.7",

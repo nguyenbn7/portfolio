@@ -1,5 +1,4 @@
 <script>
-	import 'aos/dist/aos.css';
 	import BackToTop from '$lib/component/back-to-top.svelte';
 	import About from '$lib/home/about.svelte';
 	import Hero from '$lib/home/hero.svelte';
@@ -8,7 +7,6 @@
 	import { loadSlim } from '@tsparticles/slim';
 	import Particles, { particlesInit } from '@tsparticles/svelte';
 	import { onMount } from 'svelte';
-	import Aos from 'aos';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -117,29 +115,11 @@
 		}
 	};
 
-	/**
-	 * @param {CustomEvent<any>} $event
-	 */
-	function onParticlesLoaded($event) {
-		const particlesContainer = $event.detail.particles;
-	}
-
 	/** {@link https://github.com/tsparticles/svelte/?tab=readme-ov-file#ssr} */
-	void particlesInit(async (engine) => {
-		await loadSlim(engine);
-	});
+	void particlesInit(loadSlim);
 
 	onMount(async () => {
 		const module = await import('@tsparticles/svelte');
-
-		Aos.init({
-			disable: 'phone',
-			duration: 1000,
-			easing: 'ease-in-out',
-			once: true,
-			mirror: false
-		});
-
 		ParticlesComponent = module.default;
 	});
 </script>
@@ -153,7 +133,6 @@
 	id="background-landing"
 	class="absolute size-full -z-10"
 	options={particlesConfig}
-	on:particlesLoaded={onParticlesLoaded}
 />
 
 <Hero />

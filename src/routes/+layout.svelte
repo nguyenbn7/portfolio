@@ -1,6 +1,6 @@
 <script>
 	import Favicon from '$lib/assets/images/favicon.png';
-	import '../app.css';
+	import '$lib/assets/app.css';
 	import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 	import '@fortawesome/fontawesome-free/css/regular.min.css';
 	import '@fortawesome/fontawesome-free/css/solid.min.css';
