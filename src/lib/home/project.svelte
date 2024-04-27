@@ -37,12 +37,11 @@
 			});
 		}
 
-		const GLightbox = (await import('glightbox')).default;
+		// const GLightbox = (await import('glightbox')).default;
 
-		const glightbox = GLightbox({
-			selector: '.project-glightbox',
-			
-		});
+		// const glightbox = GLightbox({
+		// 	selector: '.project-glightbox'
+		// });
 	});
 </script>
 
@@ -85,14 +84,14 @@
 							<h4 class="text-[20px] font-semibold text-white/80">{project.name}</h4>
 							<p class="text-[14px] uppercase text-white/60">{project.type}</p>
 							<div class="text-center z-[4]">
-								<a
+								<!-- <a
 									href={project.imageUrl}
 									data-gallery={project.name}
 									class="text-white/70 mx-[2px] text-[28px] inline-block duration-300 hover:text-[#03dac5] project-glightbox"
 									title={project.name}
 								>
 									<i class="fa-solid fa-plus"></i>
-								</a>
+								</a> -->
 								<a
 									class="text-white/70 mx-[2px] text-[28px] inline-block duration-300 hover:text-[#bb86fc]"
 									href={project.demoLink || '#'}
