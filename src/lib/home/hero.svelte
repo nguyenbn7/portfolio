@@ -4,6 +4,8 @@
 	import { onMount } from 'svelte';
 	import Typed from 'typed.js';
 
+	const jobTitlesArray = jobTitles.split(',');
+
 	/**
 	 * @type {HTMLSpanElement}
 	 */
@@ -11,7 +13,7 @@
 
 	onMount(() => {
 		new Typed(jobTitlesEl, {
-			strings: jobTitles.split(','),
+			strings: jobTitlesArray,
 			loop: true,
 			typeSpeed: 100,
 			backSpeed: 50,
@@ -56,6 +58,6 @@
 
 <style lang="postcss">
 	#hero {
-		background-image: url($lib/assets/images/hero-bg.jpg);
+		background-image: url($lib/assets/images/hero-bg.png);
 	}
 </style>
