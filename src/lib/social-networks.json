@@ -1,0 +1,12 @@
+[
+	{
+		"name": "Github",
+		"link": "https://github.com/nguyenbn7/",
+		"faIconClass": "fa-brands fa-github"
+	},
+	{
+		"name": "Linkedin",
+		"link": "https://www.linkedin.com/in/nguyen-bn/",
+		"faIconClass": "fa-brands fa-linkedin"
+	}
+]

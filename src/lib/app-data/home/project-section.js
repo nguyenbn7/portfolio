@@ -4,25 +4,25 @@
 export const projects = [
 	{
 		name: 'Music Player',
-		imageUrl: '/images/music-player.png',
+		image: '/projects/music-player.png',
 		type: 'web',
 		demoLink: 'https://nguyen-project-music-player.onrender.com'
 	},
 	{
 		name: 'Gradient Generator',
-		imageUrl: '/images/gradient-generator.png',
+		image: '/projects/gradient-generator.png',
 		type: 'web',
 		demoLink: 'https://nguyen-project-gradient-generator.onrender.com'
 	},
 	{
 		name: 'Calculator',
-		imageUrl: '/images/calculator.png',
+		image: '/projects/calculator.png',
 		type: 'web',
 		demoLink: 'https://nguyen-project-calculator.onrender.com'
 	},
 	{
 		name: 'Delivery driver',
-		imageUrl: '/images/delivery-driver.png',
+		image: '/projects/delivery-driver.png',
 		type: 'game',
 		demoLink: 'https://delivery-driver.onrender.com'
 	}

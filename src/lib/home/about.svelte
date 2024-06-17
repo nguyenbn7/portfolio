@@ -1,6 +1,5 @@
 <script>
-	import NguyenPronounciation from '$lib/assets/audio/Nguyen-Pronounciation.mp3';
-	import AboutImg from '$lib/assets/images/about-img.webp';
+	import { base } from '$app/paths';
 	import Container from '$lib/component/container.svelte';
 	import Row from '$lib/component/row.svelte';
 	import Section from '$lib/component/section.svelte';
@@ -18,7 +17,7 @@
 	<Container>
 		<Row>
 			<div class="xl:w-1/2 lg:w-7/12 px-3" data-aos="fade-right">
-				<img src={AboutImg} class="max-w-full h-auto align-middle" alt="Profile" />
+				<img src="{base}/about.webp" class="max-w-full h-auto align-middle" alt="Profile" />
 			</div>
 			<div class="xl:w-1/2 lg:w-7/12 pt-12 lg:pt-0 px-3">
 				<h3 class="font-normal text-[34px] text-white/80" data-aos="fade-up">About Me</h3>
@@ -28,7 +27,7 @@
 						href="https://en.wikipedia.org/wiki/Nguyen#Pronunciation">Nguyên</a
 					>
 					<a
-						href={NguyenPronounciation}
+						href="{base}/Nguyen-Pronounciation.mp3"
 						class="text-[#bb86fc] font-bold mr-1"
 						on:click|preventDefault={playAudio}
 						title="Hear pronunciation"><i class="fa-solid fa-volume-high"></i></a

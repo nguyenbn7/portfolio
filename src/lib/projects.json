@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Music Player",
+		"image": "music-player.png",
+		"type": "web",
+		"demoLink": "https://nguyenbn7.github.io/websites/music-player/"
+	},
+	{
+		"name": "Gradient Generator",
+		"image": "gradient-generator.png",
+		"type": "web",
+		"demoLink": "https://nguyenbn7.github.io/websites/gradient-generator/"
+	},
+	{
+		"name": "Calculator",
+		"image": "calculator.png",
+		"type": "web",
+		"demoLink": "https://nguyenbn7.github.io/websites/calculator/"
+	},
+	{
+		"name": "Delivery Driver",
+		"image": "delivery-driver.png",
+		"type": "game",
+		"demoLink": "https://nguyenbn7.github.io/websites/delivery-driver/"
+	}
+]

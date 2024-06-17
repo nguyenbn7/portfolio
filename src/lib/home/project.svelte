@@ -1,5 +1,6 @@
 <script>
-	import { prefixFilter, projectFilters, projects } from '$lib/app-data/home/project-section';
+	import projects from '$lib/projects.json';
+	import { prefixFilter, projectFilters } from '$lib/app-data/home/project-section';
 	import Container from '$lib/component/container.svelte';
 	import Row from '$lib/component/row.svelte';
 	import SectionHeader from '$lib/component/section-header.svelte';
@@ -8,6 +9,7 @@
 	import { onMount } from 'svelte';
 	import ProjectInfo from './project-info.svelte';
 	import ProjectWrap from './project-wrap.svelte';
+	import { base } from '$app/paths';
 
 	let filterId = 0;
 
@@ -77,7 +79,11 @@
 			{#each projects as project}
 				<div class="lg:w-1/3 md:w-1/2 px-3 mb-3 show-case-item {prefixFilter}-{project.type}">
 					<ProjectWrap class="group brightness-95 hover:brightness-105">
-						<img class="max-w-full h-auto" src={project.imageUrl} alt={project.name} />
+						<img
+							class="max-w-full h-auto"
+							src={`${base}/projects/${project.image}`}
+							alt={project.name}
+						/>
 						<ProjectInfo
 							class="group-hover:opacity-100 group-hover:before:top-[15px] group-hover:before:left-[15px] group-hover:after:bottom-[15px] group-hover:after:right-[15px]"
 						>
