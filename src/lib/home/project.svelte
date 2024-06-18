@@ -1,21 +1,19 @@
 <script>
 	import projects from '$lib/projects.json';
-	import { prefixFilter, projectFilters } from '$lib/app-data/home/project-section';
-	import Container from '$lib/component/container.svelte';
-	import Row from '$lib/component/row.svelte';
-	import SectionHeader from '$lib/component/section-header.svelte';
-	import SectionTitle from '$lib/component/section-title.svelte';
-	import Section from '$lib/component/section.svelte';
+	import Container from '$lib/app/component/container.svelte';
+	import Row from '$lib/app/component/row.svelte';
+	import SectionHeader from '$lib/app/component/section-header.svelte';
+	import SectionTitle from '$lib/app/component/section-title.svelte';
+	import Section from '$lib/app/component/section.svelte';
 	import { onMount } from 'svelte';
 	import ProjectInfo from './project-info.svelte';
 	import ProjectWrap from './project-wrap.svelte';
 	import { base } from '$app/paths';
+	import { createProjectFilters, filterPrefix } from '$lib/util';
 
+	const projectFilters = createProjectFilters(projects);
 	let filterId = 0;
-
-	/**
-	 * @type {import('isotope-layout')}
-	 */
+	/** @type {import('isotope-layout')} */
 	let showCaseIsoTope;
 
 	/**
@@ -77,7 +75,7 @@
 
 		<Row class="mb-[30px] relative" id="show-case-container" data-aos="fade-up">
 			{#each projects as project}
-				<div class="lg:w-1/3 md:w-1/2 px-3 mb-3 show-case-item {prefixFilter}-{project.type}">
+				<div class="lg:w-1/3 md:w-1/2 px-3 mb-3 show-case-item {filterPrefix}-{project.type}">
 					<ProjectWrap class="group brightness-95 hover:brightness-105">
 						<img
 							class="max-w-full h-auto"

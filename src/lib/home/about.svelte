@@ -1,8 +1,8 @@
 <script>
 	import { base } from '$app/paths';
-	import Container from '$lib/component/container.svelte';
-	import Row from '$lib/component/row.svelte';
-	import Section from '$lib/component/section.svelte';
+	import Container from '$lib/app/component/container.svelte';
+	import Row from '$lib/app/component/row.svelte';
+	import Section from '$lib/app/component/section.svelte';
 
 	/**
 	 * @param {MouseEvent & { currentTarget: EventTarget & HTMLAnchorElement; }} $event

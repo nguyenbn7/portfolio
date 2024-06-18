@@ -1,15 +1,45 @@
 [
 	{
+		"name": "Gradient Generator",
+		"image": "gradient-generator.png",
+		"type": "web",
+		"demoLink": "https://nguyenbn7.github.io/websites/gradient-generator/"
+	},
+	{
+		"name": "Delivery Driver",
+		"image": "delivery-driver.png",
+		"type": "game",
+		"demoLink": "https://nguyenbn7.github.io/websites/delivery-driver/"
+	},
+	{
 		"name": "Music Player",
 		"image": "music-player.png",
 		"type": "web",
 		"demoLink": "https://nguyenbn7.github.io/websites/music-player/"
 	},
 	{
-		"name": "Gradient Generator",
-		"image": "gradient-generator.png",
+		"name": "Math Sprint Game",
+		"image": "math-sprint-game.png",
 		"type": "web",
-		"demoLink": "https://nguyenbn7.github.io/websites/gradient-generator/"
+		"demoLink": "https://nguyenbn7.github.io/websites/math-sprint-game/"
+	},
+	{
+		"name": "Pong",
+		"image": "pong.png",
+		"type": "game",
+		"demoLink": "https://nguyenbn7.github.io/websites/pong/"
+	},
+	{
+		"name": "Quote Generator",
+		"image": "quote-generator.png",
+		"type": "web",
+		"demoLink": "https://nguyenbn7.github.io/websites/pong/"
+	},
+	{
+		"name": "Infinite Scroll",
+		"image": "infinite-scroll.png",
+		"type": "web",
+		"demoLink": "https://nguyenbn7.github.io/websites/infinity-scroll/"
 	},
 	{
 		"name": "Calculator",
@@ -18,9 +48,9 @@
 		"demoLink": "https://nguyenbn7.github.io/websites/calculator/"
 	},
 	{
-		"name": "Delivery Driver",
-		"image": "delivery-driver.png",
-		"type": "game",
-		"demoLink": "https://nguyenbn7.github.io/websites/delivery-driver/"
+		"name": "Dog Breeds Classification",
+		"image": "dog-breeds-classification.png",
+		"type": "machine learning",
+		"demoLink": "https://nguyenbn7.github.io/demo-machine-learning-models/"
 	}
 ]

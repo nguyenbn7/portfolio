@@ -5,7 +5,7 @@
 	import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 	import '@fortawesome/fontawesome-free/css/solid.min.css';
 	import '@fortawesome/fontawesome-free/css/brands.min.css';
-	import Container from '$lib/component/container.svelte';
+	import Container from '$lib/app/component/container.svelte';
 	import Typed from 'typed.js';
 	import careers from '$lib/careers.json';
 	import socialNetworks from '$lib/social-networks.json';
