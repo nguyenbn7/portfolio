@@ -9,7 +9,7 @@
 	import ProjectInfo from './project-info.svelte';
 	import ProjectWrap from './project-wrap.svelte';
 	import { base } from '$app/paths';
-	import { createProjectFilters, filterPrefix } from '$lib/util';
+	import { convertToFilterString, createProjectFilters, filterPrefix } from '$lib/util';
 
 	const projectFilters = createProjectFilters(projects);
 	let filterId = 0;
@@ -25,6 +25,7 @@
 		});
 
 		filterId = projectFilters.indexOf(projectFilter);
+		console.log(filterId);
 	}
 
 	onMount(async () => {
@@ -66,7 +67,7 @@
 							on:click={(_) => filter(projectFilter)}
 							class:filter-active={idx === filterId}
 						>
-							{projectFilter.name}
+							{projectFilter.name.split('-').join(' ')}
 						</li>
 					{/each}
 				</ul>
@@ -75,7 +76,9 @@
 
 		<Row class="mb-[30px] relative" id="show-case-container" data-aos="fade-up">
 			{#each projects as project}
-				<div class="lg:w-1/3 md:w-1/2 px-3 mb-3 show-case-item {filterPrefix}-{project.type}">
+				<div
+					class="lg:w-1/3 md:w-1/2 px-3 mb-3 show-case-item {convertToFilterString(project.type)}"
+				>
 					<ProjectWrap class="group brightness-95 hover:brightness-105">
 						<img
 							class="max-w-full h-auto"
