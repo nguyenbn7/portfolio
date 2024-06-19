@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import About from '$lib/home/about.svelte';
 	import ShowCase from '$lib/home/project.svelte';
 	import { onMount } from 'svelte';
@@ -56,7 +57,7 @@
 		<h1
 			class="text-[30px] py-[6px] leading-none font-bold tracking-[2px] uppercase hover:text-white/95 transition-all duration-500 active:text-white/10"
 		>
-			<a href="/">
+			<a href="{base}/">
 				<i class="fa-solid fa-house"></i>
 			</a>
 		</h1>
